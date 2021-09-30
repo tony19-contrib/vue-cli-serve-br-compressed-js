@@ -12,8 +12,8 @@ module.exports = {
     ],
   },
   devServer: {
-    onBeforeSetupMiddleware(server) {
-      server.app.use('*.js', (req, res, next) => {
+    onBeforeSetupMiddleware({ app }) {
+      app.use('*.js', (req, res, next) => {
         if (req.get('Accept-Encoding')?.includes('br')) {
           req.url += '.br'
           res.set('Content-Encoding', 'br')
