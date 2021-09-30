@@ -1,24 +1,6 @@
-# my-vue2-project
+> Serve brotli-compressed `.js` files with Webpack dev server
 
-## Project setup
-```
-yarn install
-```
+1. Run `npm run serve` to start the dev server.
+2. Inspect the `.js` files from Network Panel in DevTools, and verify `br` compression in response headers.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://stackoverflow.com/q/69288974/6277151
